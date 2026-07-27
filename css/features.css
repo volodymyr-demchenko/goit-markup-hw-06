@@ -1,0 +1,30 @@
+.features {
+}
+
+.features-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+
+.features-item {
+    width: 264px;
+}
+
+.features-thumb{
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    background: #f4f4fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
