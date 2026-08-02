@@ -1,26 +1,65 @@
-.hero{
+.hero {
+    padding: 72px 0;
     background-color: #2E2F42;
-    padding: 188px 0;
-    background-image: linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%), 
+    image-set(
+    url(../images/hero-bg_mob@1x.jpg) 1x, 
+    url(../images/hero-bg_mob@2x.jpg) 2x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;
+    max-width: 320px;
     margin: 0 auto;
 }
 
-
-.hero-title{
-    color: #FFFFFF;
-    letter-spacing: 0.02em;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    max-width: 496px;
-    margin: 0 auto 48px;
+@media only screen and (min-width: 768px) {
+.hero {
+    padding: 112px 0;
+    background-image: linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+        image-set(
+          url(../images/hero-bg_tab@1x.jpg) 1x,
+          url(../images/hero-bg_tab@2x.jpg) 2x);
+    max-width: 768px;
+  }
 }
 
-.hero-btn{
+@media only screen and (min-width: 1158px) {
+.hero {
+    padding: 188px 0;
+    background-image: linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+        image-set(
+          url(../images/hero-bg_desk@1x.jpg) 1x,
+          url(../images/hero-bg_desk@2x.jpg) 2x);
+    max-width: 1440px;
+  }
+}
+
+.hero-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 216px;
+    margin: 0 auto 72px;
+}
+
+@media only screen and (min-width: 768px) {
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+.hero-title {
+    margin-bottom: 48px;
+  }
+}
+
+.hero-btn {
     color: #FFFFFF;
     background-color: #4D5AE5;
     font-weight: 500;
@@ -32,15 +71,11 @@
     padding: 16px 32px;
     margin: 0 auto;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover, 
-.hero-btn:focus{
+.hero-btn:hover,
+.hero-btn:focus {
     background-color: #404BBF;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-
-.hero .container{
-}
-
